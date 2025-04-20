@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Certificate Slideshow</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+    }
+
+    .slideshow-container {
+      position: relative;
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .slide {
+      display: none;
+      text-align: center;
+    }
+
+    .slide img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: #333;
+      margin: 0;
+      padding: 10px;
+    }
+
+    .next-arrow {
+      font-size: 18px;
+      margin-left: 10px;
+      cursor: pointer;
+      color: #555;
+      background-color: #eee;
+      padding: 4px 8px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .next-arrow:hover {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slideshow-container">
+
+    <div class="slide fade">
+      <h2>Software Engineering Intern <span class="next-arrow" onclick="changeSlide(1)">&#10095;</span></h2>
+      <img src="./seIntern.png" alt="Photo 1">
+    </div>
+
+    <div class="slide fade">
+      <h2>Software Engineering <span class="next-arrow" onclick="changeSlide(1)">&#10095;</span></h2>
+      <img src="./sei.png" alt="Photo 2">
+    </div>
+
+    <div class="slide fade">
+      <h2>Java <span class="next-arrow" onclick="changeSlide(1)">&#10095;</span></h2>
+      <img src="./java.png" alt="Photo 3">
+    </div>
+
+    <div class="slide fade">
+      <h2>Problem Solving <span class="next-arrow" onclick="changeSlide(1)">&#10095;</span></h2>
+      <img src="./ps.png" alt="Photo 4">
+    </div>
+
+    <div class="slide fade">
+      <h2>SQL Basics <span class="next-arrow" onclick="changeSlide(1)">&#10095;</span></h2>
+      <img src="./SQLB.png" alt="Photo 5">
+    </div>
+
+    <div class="slide fade">
+      <h2>SQL Advanced <span class="next-arrow" onclick="changeSlide(1)">&#10095;</span></h2>
+      <img src="./SQLADV.png" alt="Photo 6">
+    </div>
+
+    <div class="slide fade">
+      <h2>Go Lang <span class="next-arrow" onclick="changeSlide(1)">&#10095;</span></h2>
+      <img src="./GO.png" alt="Photo 7">
+    </div>
+
+    <div class="slide fade">
+      <h2>JavaScript <span class="next-arrow" onclick="changeSlide(1)">&#10095;</span></h2>
+      <img src="./JS.png" alt="Photo 8">
+    </div>
+
+    <div class="slide fade">
+      <h2>Python <span class="next-arrow" onclick="changeSlide(1)">&#10095;</span></h2>
+      <img src="./python.png" alt="Photo 9">
+    </div>
+
+  </div>
+
+  <script>
+    let slideIndex = 0;
+    const slides = document.getElementsByClassName("slide");
+
+    function showSlide(index) {
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[index].style.display = "block";
+    }
+
+    function changeSlide(n) {
+      slideIndex = (slideIndex + n + slides.length) % slides.length;
+      showSlide(slideIndex);
+    }
+
+    // Initialize
+    showSlide(slideIndex);
+  </script>
+</body>
+</html>
