@@ -45,3 +45,13 @@ certificate/
 git clone https://github.com/naiduhydra/certificate.git
 cd certificate
 open index.html in your browser
+
+Built with ❤️ by Naidu Hydra
+---
+
+Let me know if you want to:
+- Add a **download** or **print** button for the certificate
+- Support **multiple fonts/templates**
+- Automatically generate **PDF certificates**
+
+I can help enhance it too.
