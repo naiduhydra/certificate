@@ -27,3 +27,21 @@ certificate/
 ├── style.css
 └── script.js
 
+
+## 🚀 How to Use
+
+1. Go to the [live site](https://naiduhydra.github.io/certificate/)
+2. Enter your name in the input field
+3. Your certificate is updated in real time
+4. Take a screenshot or print it as needed
+
+## 📸 Screenshot
+
+*(Optional: Add a screenshot of the certificate output here)*
+
+## 🧑‍💻 How to Run Locally
+
+```bash
+git clone https://github.com/naiduhydra/certificate.git
+cd certificate
+open index.html in your browser
