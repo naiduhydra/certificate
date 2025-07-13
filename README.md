@@ -22,5 +22,8 @@ Try it out here:
 - **JavaScript** – Dynamic name input and rendering
 
 ## 📁 Folder Structure
-
+certificate/
+├── index.html
+├── style.css
+└── script.js
 
